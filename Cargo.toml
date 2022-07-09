@@ -1,0 +1,11 @@
+[package]
+name = "https_problems"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+anyhow = "1.0.56"
+hyper = { version = "0.14.7", features = ["client", "http1", "http2", "tcp"] }
+hyper-proxy = { version = "0.9.1", default-features = false }
+tokio = { version = "1.15", features = ["full", "test-util", "tracing"] }
+tracing-subscriber = { version = "0.3.11", features = ["parking_lot", "fmt", "registry", "env-filter", "ansi", "json", "local-time"] }
